@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LoginForm_androidP2</string>
+    <string name="login">Login</string>
+    <string name="username_">Username : </string>
+    <string name="password_">Password : </string>
+    <string name="masukkan_us">Masukkan Username</string>
+    <string name="masukkan_pw">Masukkan Password</string>
+    <string name="buttonLogin">Log In</string>
+
 </resources>

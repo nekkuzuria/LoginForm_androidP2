@@ -1,18 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BFDBFE"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="234dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAppearance="@style/login" />
+
+    <LinearLayout
+        android:id="@+id/form1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="31dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/form2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/username_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif"
+                android:gravity="top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/username_"
+                android:textAppearance="@style/username_" />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="12"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/masukkan_us"
+                android:textAppearance="@style/masukkan_us"
+                android:textColor="#AB939393" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/form3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/password_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif"
+                android:gravity="top"
+                android:lineSpacingExtra="1sp"
+                android:text="@string/password_"
+                android:textAppearance="@style/password" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="12"
+                android:fontFamily="sans-serif-medium"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/masukkan_pw"
+                android:textAppearance="@style/masukkan_pw"
+                android:textColor="#AB939393" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/form4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                app:backgroundTint="@null"
+                android:text="@string/buttonLogin"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
