@@ -6,15 +6,14 @@
     android:layout_height="match_parent"
     android:background="#BFDBFE"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="234dp"
         android:fontFamily="sans-serif-black"
-        android:gravity="center"
         android:text="@string/login"
         android:textAlignment="center"
         android:textAppearance="@style/login" />
@@ -24,7 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="31dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -39,7 +37,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:fontFamily="sans-serif"
-                android:gravity="top"
                 android:lineSpacingExtra="1sp"
                 android:text="@string/username_"
                 android:textAppearance="@style/username_" />
@@ -50,18 +47,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:ems="12"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="sans-serif"
                 android:lineSpacingExtra="4sp"
-                android:text="@string/masukkan_us"
-                android:textAppearance="@style/masukkan_us"
-                android:textColor="#AB939393" />
-
+                android:hint="Masukkan Username"
+                android:textSize="14sp"
+                android:textColorHint="#AB939393"
+                android:textColor="#000000"
+                android:backgroundTint="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/form3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
@@ -70,7 +68,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:fontFamily="sans-serif"
-                android:gravity="top"
                 android:lineSpacingExtra="1sp"
                 android:text="@string/password_"
                 android:textAppearance="@style/password" />
@@ -81,18 +78,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:ems="12"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="sans-serif"
                 android:lineSpacingExtra="4sp"
-                android:text="@string/masukkan_pw"
-                android:textAppearance="@style/masukkan_pw"
-                android:textColor="#AB939393" />
+                android:hint="Masukkan Password"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:textColorHint="#AB939393"
+                android:textColor="#000000"
+                android:backgroundTint="@color/black"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/form4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
@@ -103,6 +103,7 @@
                 android:background="@drawable/button"
                 app:backgroundTint="@null"
                 android:text="@string/buttonLogin"
+                android:textColor="@color/white"
                 android:textAllCaps="false" />
         </LinearLayout>
 
